@@ -1,0 +1,38 @@
+.weather-card {
+  background: #f1f5f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  max-width: 320px;
+  margin: 1.5rem auto;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+}
+
+.weather-card.error {
+  color: #ef4444;
+  background-color: #ffe4e6;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.weather-info img {
+  width: 60px;
+  height: 60px;
+}
+
+.weather-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.weather-info p {
+  margin: 4px 0 0;
+  text-transform: capitalize;
+}

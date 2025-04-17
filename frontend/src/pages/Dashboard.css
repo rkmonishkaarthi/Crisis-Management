@@ -1,0 +1,86 @@
+/* General container */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading */
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  main p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Message when no data */
+  main p:last-child {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    th {
+      background-color: #0056b3;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+    }
+  
+    td {
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td::before {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      width: 45%;
+      white-space: nowrap;
+      font-weight: bold;
+      color: #555;
+    }
+  
+    td:nth-of-type(1)::before { content: "Name"; }
+    td:nth-of-type(2)::before { content: "Email"; }
+    td:nth-of-type(3)::before { content: "Phone"; }
+    td:nth-of-type(4)::before { content: "Address"; }
+    td:nth-of-type(5)::before { content: "Crisis"; }
+  }
+  
